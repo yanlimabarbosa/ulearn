@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function CTASection() {
 
@@ -18,21 +19,23 @@ export function CTASection() {
           {ctaData.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            size="lg" 
-            className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 animate-bounce-subtle"
-            // onClick={onPrimaryClick}
-          >
-            {ctaData.primaryButtonText}
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200"
-            // onClick={onSecondaryClick}
-          >
-            {ctaData.secondaryButtonText}
-          </Button>
+          <Link href="/choose-role">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200"
+            >
+              {ctaData.primaryButtonText}
+            </Button>
+          </Link>
+          <Link href="/choose-role">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200"
+            >
+              {ctaData.secondaryButtonText}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
