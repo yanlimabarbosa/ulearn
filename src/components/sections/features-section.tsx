@@ -26,8 +26,8 @@ export function FeaturesSection() {
           {featuresData.features.map((feature, index) => (
             <Card 
               key={index}
-              className="text-center hover:scale-105 transition-all duration-300 hover:shadow-lg animate-fade-in"
-              style={{ animationDelay: `${(index + 1) * 100}ms` }}
+              className="text-center hover:scale-105 transition-all duration-300 hover:shadow-lg"
+              
             >
               <CardHeader>
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-primary/20 transition-colors duration-200">

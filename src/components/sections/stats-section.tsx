@@ -13,10 +13,10 @@ export function StatsSection() {
           {statsData.map((stat, index) => (
             <div 
               key={index}
-              className="animate-fade-in hover:scale-105 transition-transform duration-300"
-              style={{ animationDelay: `${(index + 1) * 100}ms` }}
+              className="hover:scale-105 transition-transform duration-300"
+              
             >
-              <div className="text-3xl font-bold text-primary mb-2 animate-count-up">
+                              <div className="text-3xl font-bold text-primary mb-2">
                 {stat.value}
               </div>
               <div className="text-muted-foreground">{stat.label}</div>

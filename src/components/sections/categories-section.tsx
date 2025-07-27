@@ -29,8 +29,8 @@ export function CategoriesSection() {
           {categoriesData.categories.map((category, index) => (
             <Card 
               key={index} 
-              className="hover:border-primary/50 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" 
-              style={{ animationDelay: `${(index + 1) * 100}ms` }}
+              className="hover:border-primary/50 hover:scale-105 transition-all duration-300 cursor-pointer" 
+              
             >
               <CardHeader className="text-center pb-2">
                 <div className="text-3xl mb-2 hover:scale-110 transition-transform duration-200">
